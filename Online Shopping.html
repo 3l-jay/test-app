@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .product-img {
+        transition: transform 0.2s; /* Add smooth transition effect for image hover */
+      }
+      .product-img:hover {
+        transform: scale(1.05); /* Enlarge the image when hovered */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Online Shopping</h1>
+      <div class="row">
+        <!-- Add 10 items using the grid system -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/White Shirt.jpg' %}"
+              alt="White Shirt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">White Shirt</h5>
+              <p class="card-text">R549.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Black Shirt.jpg' %}"
+              alt="Black Shirt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Black Shirt</h5>
+              <p class="card-text">R500.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Brown Shirt.jpg' %}"
+              alt="Brown Shirt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brown Shirt</h5>
+              <p class="card-text">R449.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Cream Shirt.jpg' %}"
+              alt="Cream Shirt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cream Shirt</h5>
+              <p class="card-text">R200.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Easy Shorts.jpg' %}"
+              alt="Easy Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Easy Shorts</h5>
+              <p class="card-text">R199.50</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Navy Shorts.jpg' %}"
+              alt="Navy Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Navy Shorts</h5>
+              <p class="card-text">R199.50</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Brown Shorts.jpg' %}"
+              alt="Brown Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brown Shorts</h5>
+              <p class="card-text">R399.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Blue Shorts.jpg' %}"
+              alt="Blue Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blue Shorts</h5>
+              <p class="card-text">R399.00</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Lorne Sunglasses.jpg' %}"
+              alt="Lorne Sunglasses"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorne Sunglasses</h5>
+              <p class="card-text">R349.50</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top product-img"
+              src="{% static 'images/Bellrae Sunglasses.jpg' %}"
+              alt="Bellrae Sunglasses"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bellrae Sunglasses</h5>
+              <p class="card-text">R349.50</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Create a footer with a horizontal form -->
+    <footer class="mt-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <!-- fields for contact details -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="{% static 'images/company Logo.png' %}"
+              alt="Company Logo"
+              style="max-height: 100px"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
